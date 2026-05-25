@@ -1,0 +1,119 @@
+aid: yaskawa-robotics
+name: Yaskawa / Motoman
+description: >-
+  Yaskawa Electric Corporation is a Kitakyushu, Japan industrial automation
+  company and the world's largest manufacturer of AC servo motors and motion
+  controllers, with major business segments in motion control (AC servo
+  motors, SERVOPACK amplifiers, machine controllers), AC drives / inverters,
+  industrial robotics (under the Motoman brand), and systems engineering.
+  Yaskawa's Motoman robotics division supplies articulated, SCARA, delta,
+  collaborative, and mini robots used across automotive, EV, semiconductor,
+  electronics, food, biomedical, and logistics manufacturing, alongside its
+  Sigma-X servo family and GA / U1000 industrial AC drives. The company
+  exposes a developer surface through the Yaskawa Motoman Developer Portal at
+  developer.motoman.com and the Yaskawa-Global GitHub organization, including
+  YMConnect (a modern PC-side communication library for C++ 17 and C#),
+  MotoPlus SDK (on-controller C code for deterministic motion, I/O, jobs, and
+  alarms), MotoROS2 (a native ROS 2 / micro-ROS node running on DX200,
+  YRC1000, and YRC1000micro controllers), MotoCom SDK (legacy Windows
+  communication SDK), the Smart Pendant SDK (Java extensions for the Smart
+  Pendant teach interface), and YIP (Yaskawa Innovation Plus) packages and
+  Smart Packager tooling. The catalog is SDK- and protocol-driven rather
+  than HTTP/REST — there are no public OpenAPI specifications, so this
+  profile captures the SDK, ROS, GitHub, and developer-portal surface
+  without generated OpenAPI artifacts.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Robotics
+  - Industrial Robotics
+  - Industrial Automation
+  - Motion Control
+  - Servo Motors
+  - AC Drives
+  - Variable Frequency Drives
+  - Inverters
+  - Manufacturing
+  - Factory Automation
+  - SCARA
+  - Articulated Robots
+  - Delta Robots
+  - Collaborative Robots
+  - ROS 2
+  - micro-ROS
+  - MotoPlus
+  - Motoman
+  - Sigma-X
+  - Hardware
+  - SDK
+url: https://raw.githubusercontent.com/api-evangelist/yaskawa-robotics/refs/heads/main/apis.yml
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.20'
+apis: []
+common:
+  - type: Website
+    url: https://www.yaskawa-global.com
+  - type: Website
+    url: https://www.yaskawa.com
+  - type: Website
+    url: https://www.motoman.com
+  - type: Company
+    url: https://www.yaskawa-global.com/company
+  - type: Business
+    url: https://www.yaskawa-global.com/company/profile/business
+  - type: Products
+    url: https://www.yaskawa.com/products
+  - type: Robotics
+    url: https://www.motoman.com/en-us/products/robots
+  - type: Software
+    url: https://www.motoman.com/en-us/products/software
+  - type: Portal
+    url: https://developer.motoman.com/en/home
+  - type: Documentation
+    url: https://developer.motoman.com/en/YMConnect
+  - type: Documentation
+    url: https://knowledge.motoman.com/hc/en-us/articles/33634309555730-Programming-Languages-Developer-Tools
+  - type: KnowledgeBase
+    url: https://knowledge.motoman.com/hc/en-us
+  - type: GitHub
+    url: https://github.com/Yaskawa-Global
+  - type: SDK
+    url: https://github.com/Yaskawa-Global/YMConnect
+  - type: SDK
+    url: https://github.com/Yaskawa-Global/SmartPendantSDK
+  - type: SDK
+    url: https://www.motoman.com/en-us/products/software/development/motocom-sdk
+  - type: SourceCode
+    url: https://github.com/Yaskawa-Global/motoros2
+  - type: SourceCode
+    url: https://github.com/Yaskawa-Global/motoros2_interfaces
+  - type: SourceCode
+    url: https://github.com/Yaskawa-Global/motoman_ros2_support_packages
+  - type: SourceCode
+    url: https://github.com/Yaskawa-Global/micro_ros_motoplus
+  - type: SourceCode
+    url: https://github.com/Yaskawa-Global/Roxal
+  - type: SourceCode
+    url: https://github.com/YaskawaEurope/ros2-starter-for-yaskawa-robots
+  - type: Tools
+    url: https://developer.motoman.com/en/yip/smart-packager
+  - type: Support
+    url: https://www.motoman.com/en-us/about/support
+  - type: Careers
+    url: https://www.yaskawa-global.com/company/careers
+  - type: News
+    url: https://www.yaskawa-global.com/news
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/yaskawa-electric-corporation
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/yaskawa-america-inc-
+  - type: YouTube
+    url: https://www.youtube.com/@MotomanRoboticsYaskawa
+  - type: Twitter
+    url: https://twitter.com/Yaskawa_America
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
