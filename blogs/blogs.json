@@ -1,0 +1,14 @@
+{
+  "repo": "yaskawa-robotics",
+  "feeds": [
+    {
+      "source": "https://www.yaskawa-global.com/news",
+      "feed_url": "https://www.yaskawa-global.com/category/news/feed/?post_type=post",
+      "title": "Yaskawa Global News",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-05T00:00:00Z"
+}

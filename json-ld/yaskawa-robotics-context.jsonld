@@ -1,0 +1,144 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "yaskawa": "https://www.yaskawa-global.com/vocab#",
+    "motoman": "https://developer.motoman.com/vocab#",
+    "qudt": "http://qudt.org/vocab/unit/",
+
+    "Organization": "schema:Organization",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "sameAs": "schema:sameAs",
+    "industry": "schema:industry",
+    "foundingLocation": "schema:foundingLocation",
+
+    "Robot": {
+      "@id": "yaskawa:Robot",
+      "@type": "@id"
+    },
+    "RobotController": {
+      "@id": "yaskawa:RobotController",
+      "@type": "@id"
+    },
+    "ServoMotor": {
+      "@id": "yaskawa:ServoMotor",
+      "@type": "@id"
+    },
+    "ACDrive": {
+      "@id": "yaskawa:ACDrive",
+      "@type": "@id"
+    },
+    "MachineController": {
+      "@id": "yaskawa:MachineController",
+      "@type": "@id"
+    },
+    "MotionJob": {
+      "@id": "motoman:MotionJob",
+      "@type": "@id"
+    },
+    "Alarm": {
+      "@id": "motoman:Alarm",
+      "@type": "@id"
+    },
+    "IOSignal": {
+      "@id": "motoman:IOSignal",
+      "@type": "@id"
+    },
+    "Position": {
+      "@id": "motoman:Position",
+      "@type": "@id"
+    },
+    "Axis": {
+      "@id": "motoman:Axis",
+      "@type": "@id"
+    },
+
+    "robotType": {
+      "@id": "yaskawa:robotType",
+      "@type": "schema:Text"
+    },
+    "controllerModel": {
+      "@id": "yaskawa:controllerModel",
+      "@type": "schema:Text"
+    },
+    "dof": {
+      "@id": "yaskawa:degreesOfFreedom",
+      "@type": "schema:Integer"
+    },
+    "payload": {
+      "@id": "yaskawa:payload",
+      "@type": "qudt:KiloGM"
+    },
+    "reach": {
+      "@id": "yaskawa:reach",
+      "@type": "qudt:MilliM"
+    },
+    "speed": {
+      "@id": "yaskawa:speed",
+      "@type": "qudt:MilliM-PER-SEC"
+    },
+    "jobName": {
+      "@id": "motoman:jobName",
+      "@type": "schema:Text"
+    },
+    "alarmCode": {
+      "@id": "motoman:alarmCode",
+      "@type": "schema:Text"
+    },
+    "alarmSeverity": {
+      "@id": "motoman:alarmSeverity",
+      "@type": "schema:Text"
+    },
+    "ioPort": {
+      "@id": "motoman:ioPort",
+      "@type": "schema:Integer"
+    },
+    "ioValue": {
+      "@id": "motoman:ioValue",
+      "@type": "schema:Integer"
+    },
+    "jointAngle": {
+      "@id": "motoman:jointAngle",
+      "@type": "qudt:DEG"
+    },
+    "cartesianX": {
+      "@id": "motoman:cartesianX",
+      "@type": "qudt:MilliM"
+    },
+    "cartesianY": {
+      "@id": "motoman:cartesianY",
+      "@type": "qudt:MilliM"
+    },
+    "cartesianZ": {
+      "@id": "motoman:cartesianZ",
+      "@type": "qudt:MilliM"
+    },
+    "toolFrame": {
+      "@id": "motoman:toolFrame",
+      "@type": "schema:Integer"
+    },
+    "userFrame": {
+      "@id": "motoman:userFrame",
+      "@type": "schema:Integer"
+    },
+
+    "SDK": {
+      "@id": "schema:SoftwareApplication",
+      "@type": "@id"
+    },
+    "sdkName": "schema:name",
+    "programmingLanguage": "schema:programmingLanguage",
+    "softwareVersion": "schema:softwareVersion",
+    "codeRepository": "schema:codeRepository",
+
+    "YaskawaGlobal": {
+      "@id": "yaskawa:Organization",
+      "@type": "schema:Organization",
+      "schema:name": "Yaskawa Electric Corporation",
+      "schema:url": "https://www.yaskawa-global.com",
+      "schema:industry": "Industrial Automation"
+    }
+  }
+}

@@ -1,0 +1,189 @@
+vocabulary:
+  name: Yaskawa Robotics / Motoman Vocabulary
+  description: >-
+    Key industrial robotics and automation concepts used across the Yaskawa
+    Motoman developer surface, covering robot control, motion programming,
+    SDK interfaces (YMConnect, MotoPlus, MotoROS2, SmartPendantSDK), servo
+    drives, and factory automation terminology.
+  version: "1.0.0"
+  terms:
+
+    - term: MotionJob
+      definition: >-
+        A named program stored on the Yaskawa robot controller that defines
+        a sequence of motion instructions, I/O operations, and logic executed
+        by the robot. Jobs are created offline or via the teach pendant and
+        can be started, stopped, or monitored through the YMConnect and
+        MotoPlus SDK interfaces.
+      tags:
+        - motion
+        - programming
+        - controller
+
+    - term: SERVOPACK
+      definition: >-
+        Yaskawa's brand name for its AC servo amplifier units that drive servo
+        motors. SERVOPACK amplifiers receive position, velocity, and torque
+        commands from a machine controller and deliver closed-loop control
+        to the motor axis. The Sigma-X series is the current flagship family.
+      tags:
+        - hardware
+        - servo
+        - motion-control
+
+    - term: YRC1000
+      definition: >-
+        Yaskawa's current-generation compact robot controller, compatible with
+        most Motoman articulated and SCARA robots. The YRC1000 runs the
+        MotoPlus application platform, hosts MotoROS2 nodes, and supports
+        YMConnect PC communication over Ethernet.
+      tags:
+        - controller
+        - hardware
+        - YRC1000
+
+    - term: MotoPlus
+      definition: >-
+        An on-controller application SDK allowing developers to write
+        deterministic C programs that run directly on DX200, YRC1000, and
+        YRC1000micro controllers. MotoPlus applications have real-time access
+        to motion commands, I/O, alarms, variable registers, and job
+        execution, enabling custom machine-level automation logic.
+      tags:
+        - sdk
+        - on-controller
+        - real-time
+
+    - term: YMConnect
+      definition: >-
+        A modern PC-side communication library (C++ 17 and C#) that lets
+        external applications connect to Motoman robot controllers over
+        Ethernet to read status, start/stop jobs, read and write variables,
+        manage alarms, and send motion commands. Successor to the legacy
+        MotoCom SDK.
+      tags:
+        - sdk
+        - pc-side
+        - communication
+
+    - term: MotoROS2
+      definition: >-
+        A MotoPlus-based application that implements a native ROS 2 / micro-ROS
+        node directly on the robot controller. MotoROS2 exposes robot state,
+        joint trajectory execution, and I/O over standard ROS 2 topics,
+        services, and actions, enabling integration with the broader ROS 2
+        ecosystem without a separate PC bridge.
+      tags:
+        - ros2
+        - open-source
+        - middleware
+
+    - term: SmartPendant
+      definition: >-
+        Yaskawa's touchscreen teach pendant for YRC1000 controllers, featuring
+        a modernized UI built on a Java/web-based application framework. The
+        Smart Pendant SDK allows third parties to write Java extension panels
+        that integrate custom HMI logic and robot interaction directly into
+        the pendant interface.
+      tags:
+        - pendant
+        - hmi
+        - sdk
+
+    - term: CoordinateFrame
+      definition: >-
+        A reference coordinate system used to define robot positions and
+        trajectories. Yaskawa controllers support multiple frames: World,
+        Base, User (workpiece), and Tool (end-effector). Positions stored in
+        jobs or transmitted via SDK calls specify both Cartesian coordinates
+        (X, Y, Z, Rx, Ry, Rz) and the frame number they reference.
+      tags:
+        - motion
+        - kinematics
+        - coordinate-system
+
+    - term: Alarm
+      definition: >-
+        A fault or warning condition detected by the robot controller or
+        SERVOPACK. Alarms have a numeric code, a severity level (minor,
+        major, or servo), and a descriptive message. Active alarms prevent
+        motion; they must be acknowledged and cleared before the robot can
+        resume operation. YMConnect and MotoPlus APIs expose alarm read
+        and reset functions.
+      tags:
+        - diagnostics
+        - fault-handling
+        - safety
+
+    - term: IOSignal
+      definition: >-
+        A digital or analog input or output signal managed by the robot
+        controller's I/O module. I/O signals are addressed by port number
+        and group, used to coordinate with peripheral equipment such as
+        grippers, conveyors, and PLCs. Both MotoPlus and YMConnect provide
+        read/write access to I/O port values.
+      tags:
+        - io
+        - digital
+        - analog
+        - plc
+
+    - term: Interference Zone
+      definition: >-
+        A defined 3-D spatial volume configured on the robot controller to
+        prevent collisions between cooperating robots or with fixed obstacles.
+        When a robot's TCP enters or attempts to enter an interference zone,
+        the controller pauses or prohibits motion until the zone is clear.
+      tags:
+        - safety
+        - motion-planning
+        - multi-robot
+
+    - term: InverterDrive
+      definition: >-
+        Yaskawa's variable-frequency AC drive (also called a VFD or inverter),
+        sold under the GA500, GA700, and U1000 series. Inverter drives control
+        AC induction motor speed and torque by varying output frequency and
+        voltage. They are widely deployed in conveyors, pumps, fans, and
+        other industrial machinery alongside Yaskawa robots.
+      tags:
+        - drives
+        - vfd
+        - inverter
+        - motor-control
+
+    - term: Pulse
+      definition: >-
+        The native unit of joint position used internally by Yaskawa robot
+        controllers and servo encoders. Pulse values represent encoder counts
+        and are the low-level representation of axis position before conversion
+        to degrees or millimetres. SDK position structures can express positions
+        in either pulse or Cartesian/joint-angle formats.
+      tags:
+        - kinematics
+        - encoder
+        - position
+
+    - term: UserVariable
+      definition: >-
+        Named or indexed registers on the robot controller used to pass data
+        between jobs, MotoPlus applications, and external PC programs. Variable
+        types include byte, integer, double, real, position, and string.
+        YMConnect and MotoPlus both provide read/write APIs for user variables,
+        enabling parameterized job execution and state sharing.
+      tags:
+        - data
+        - registers
+        - inter-process
+
+    - term: Roxal
+      definition: >-
+        A high-level C++-based robot programming language developed by Yaskawa
+        as an open-source alternative to proprietary INFORM job syntax. Roxal
+        code compiles to controller-executable instructions and is published on
+        the Yaskawa-Global GitHub organization, targeting developers who prefer
+        modern programming constructs for robot motion programming.
+      tags:
+        - programming-language
+        - open-source
+        - motion
