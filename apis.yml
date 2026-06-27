@@ -80,11 +80,11 @@ common:
     url: https://knowledge.motoman.com/hc/en-us
   - type: GitHub
     url: https://github.com/Yaskawa-Global
-  - type: SDK
+  - type: SDKs
     url: https://github.com/Yaskawa-Global/YMConnect
-  - type: SDK
+  - type: SDKs
     url: https://github.com/Yaskawa-Global/SmartPendantSDK
-  - type: SDK
+  - type: SDKs
     url: https://www.motoman.com/en-us/products/software/development/motocom-sdk
   - type: SourceCode
     url: https://github.com/Yaskawa-Global/motoros2
