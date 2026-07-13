@@ -5,10 +5,10 @@
       "source": "https://www.yaskawa-global.com/news",
       "feed_url": "https://www.yaskawa-global.com/category/news/feed/?post_type=post",
       "title": "Yaskawa Global News",
-      "saved": 0,
-      "method": "none"
+      "saved": 9,
+      "method": "feed"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-05T00:00:00Z"
+  "post_count": 10,
+  "fetched": "2026-07-11T11:43:46Z"
 }
