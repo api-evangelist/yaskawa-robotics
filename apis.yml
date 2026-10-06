@@ -79,10 +79,14 @@ tags:
   - SDK
 url: https://raw.githubusercontent.com/api-evangelist/yaskawa-robotics/refs/heads/main/apis.yml
 created: '2026-05-25'
-modified: '2026-05-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.yaskawa-global.com/ir/news
+    type: Blog
+  - url: https://www.yaskawa-global.com/ir/news/feed
+    type: BlogRSS
   - type: IssueTracker
     url: https://github.com/Yaskawa-Global/motoros2/issues
   - type: Releases
