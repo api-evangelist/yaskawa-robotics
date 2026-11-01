@@ -1,4 +1,4 @@
-# yaskawa-robotics
+# Yaskawa / Motoman
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,27 +64,94 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Yaskawa / Motoman — industrial robotics, AC servo motors, drives, and motion control.
+Yaskawa Electric Corporation is a Kitakyushu, Japan industrial automation company and the world's largest manufacturer of AC servo motors and motion controllers, with major business segments in motion control (AC servo motors, SERVOPACK amplifiers, machine controllers), AC drives / inverters, industrial robotics (under the Motoman brand), and systems engineering. Yaskawa's Motoman robotics division supplies articulated, SCARA, delta, collaborative, and mini robots used across automotive, EV, semiconductor, electronics, food, biomedical, and logistics manufacturing, alongside its Sigma-X servo family and GA / U1000 industrial AC drives. The company exposes a developer surface through the Yaskawa Motoman Developer Portal at developer.motoman.com and the Yaskawa-Global GitHub organization, including YMConnect (a modern PC-side communication library for C++ 17 and C#), MotoPlus SDK (on-controller C code for deterministic motion, I/O, jobs, and alarms), MotoROS2 (a native ROS 2 / micro-ROS node running on DX200, YRC1000, and YRC1000micro controllers), MotoCom SDK (legacy Windows communication SDK), the Smart Pendant SDK (Java extensions for the Smart Pendant teach interface), and YIP (Yaskawa Innovation Plus) packages and Smart Packager tooling. The catalog is SDK- and protocol-driven rather than HTTP/REST — there are no public OpenAPI specifications, so this profile captures the SDK, ROS, GitHub, and developer-portal surface without generated OpenAPI artifacts.
 
-Yaskawa Electric Corporation (Kitakyushu, Japan) is the world's largest manufacturer of AC servo motors and motion controllers, and one of the most established industrial robotics vendors through its Motoman brand. This api-evangelist profile catalogs Yaskawa's developer-facing surface across four business segments: **Motion Control** (Sigma-X servo motors and SERVOPACK amplifiers), **AC Drives / Inverters** (GA800, U1000, low- and medium-voltage VFDs), **Robotics** (Motoman articulated, SCARA, delta, mini, and collaborative robots on DX200, YRC1000, and YRC1000micro controllers), and **Systems Engineering**.
+**Areas:** Robotics · Industrial Robotics · Industrial Automation · Motion Control · Servo Motors · AC Drives · Variable Frequency Drives · Inverters · Manufacturing · Factory Automation · SCARA · Articulated Robots
 
-## Developer Surface
+## Yaskawa / Motoman on APIs.io
 
-Yaskawa's developer presence is **SDK- and protocol-driven**, not HTTP/REST. There are no public OpenAPI specifications, so this profile intentionally omits a generated `openapi/` directory. The catalog instead points to:
+Everything profiled for Yaskawa / Motoman is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/yaskawa-robotics/](https://apis.io/providers/yaskawa-robotics/)** — or go straight to one of the APIs or properties below.
 
-- **[Yaskawa Motoman Developer Portal](https://developer.motoman.com/en/home)** — the central hub for SDK docs, how-tos, and YIP packages.
-- **[Yaskawa-Global on GitHub](https://github.com/Yaskawa-Global)** — official open-source repositories.
-- **[YMConnect](https://github.com/Yaskawa-Global/YMConnect)** — modern PC-side communication library for controlling Motoman robots from custom applications (C++ 17 and C#).
-- **[MotoROS2](https://github.com/Yaskawa-Global/motoros2)** — a native ROS 2 (rcl, rclc, micro-ROS) node running on MotoPlus-compatible controllers; supports ROS 2 Foxy, Galactic, Humble, and Jazzy, up to 8 motion groups, ~100 Hz control.
-- **MotoPlus SDK** — on-controller C development for deterministic timing, multi-tasking communication, position/motion data, variables, I/O, jobs, and alarm/error handling.
-- **[MotoCom SDK](https://www.motoman.com/en-us/products/software/development/motocom-sdk)** — legacy Windows SDK for status monitoring, I/O exchange, and variable management.
-- **[SmartPendantSDK](https://github.com/Yaskawa-Global/SmartPendantSDK)** — Java SDK for extending the Smart Pendant teach interface.
-- **[Smart Packager](https://developer.motoman.com/en/yip/smart-packager)** — tooling for building YIP (Yaskawa Innovation Plus) extension packages.
+### Published properties
 
-## Profile Contents
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- [`apis.yml`](./apis.yml) — APIs.json 0.20 catalog entry for Yaskawa / Motoman.
+#### JSON-LD (1)
 
-## Related
+Linked-data contexts for the provider's vocabulary.
 
-- [api-evangelist/figure-robotics](https://github.com/api-evangelist/figure-robotics) — Figure (humanoid robotics).
+- [Yaskawa Robotics Context](https://apis.io/jsonld/yaskawa-robotics/yaskawa-robotics-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Yaskawa Robotics / Motoman Vocabulary](https://apis.io/vocabularies/yaskawa-robotics/yaskawa-robotics-vocabulary/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Yaskawa Robotics Domain Security](https://apis.io/security/yaskawa-robotics/yaskawa-robotics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.yaskawa-global.com)
+- [Documentation](https://developer.motoman.com/en/YMConnect)
+- [Support](https://www.motoman.com/en-us/about/support)
+- [Blog](https://www.yaskawa-global.com/ir/news)
+
+## API Evangelist rating
+
+**Kin Score 18.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/yaskawa-robotics/](https://apis.io/providers/yaskawa-robotics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Yaskawa / Motoman: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/yaskawa-robotics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
